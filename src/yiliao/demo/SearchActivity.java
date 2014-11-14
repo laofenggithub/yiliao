@@ -1,14 +1,11 @@
 package yiliao.demo;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import org.apache.http.util.EncodingUtils;
 
 import com.fs.yiliao.R;
 
@@ -42,6 +39,7 @@ import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 
 public class SearchActivity extends Activity {
+	private Paint paint = new Paint();//提取出onDraw中的
 	private ListView lvPerson = null;
 	private ListView lvKind = null;
 	private ImageButton btiSearch;
@@ -175,7 +173,6 @@ public class SearchActivity extends Activity {
         		new Button.OnClickListener() {
 					@Override
 					public void onClick(View v) {
-						// TODO Auto-generated method stub
 						// 終了
 						showDialog(SearchActivity.this, "問診票終了しますか"); 
 					}
@@ -262,7 +259,7 @@ public class SearchActivity extends Activity {
         resultPath += person.get("pslid").toString().trim();
         resultPath += "_";
 
-        java.text.SimpleDateFormat format = new java.text.SimpleDateFormat("yyyyMMdd");
+        java.text.SimpleDateFormat format = new java.text.SimpleDateFormat("yyyyMMdd", java.util.Locale.getDefault());
         String nowData = format.format(Calendar.getInstance().getTime());
         
         for(int i=0; i < kindname.size(); i++){
@@ -448,19 +445,16 @@ public class SearchActivity extends Activity {
         }
         @Override
         public int getCount() {
-            // TODO Auto-generated method stub
             return ltData.size();
         }
         
         @Override
         public Object getItem(int position) {
-            // TODO Auto-generated method stub
             return ltData.get(position);
         }
         
         @Override
         public long getItemId(int position) {
-            // TODO Auto-generated method stub
             return position;
         }
         
@@ -470,7 +464,6 @@ public class SearchActivity extends Activity {
         
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-
         	mInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         	view = mInflater.inflate(R.layout.personlist, null, false);
             holder = (personViewHolder)view.getTag();
@@ -517,125 +510,6 @@ public class SearchActivity extends Activity {
             holder.sex.setText((String)ltData.get(position).get("sex"));
 
             return view;
-        }
-    }
-
-    public class SubYesNoButton extends Button
-    {
-        //no_high:Color.rgb(220, 230, 242)
-        //high:Color.rgb(162, 205, 144)
-  	  int colorBack;
-
-        @Override
-        protected void onDraw(Canvas canvas)
-        {
-            super.onDraw(canvas);
-            Paint paint = new Paint();
-            int radius = 15;
-            int colorPaint = Color.rgb(66, 120, 185);
-
-            paint.setColor(colorPaint);
-            paint.setStrokeWidth(8);
-            canvas.drawCircle(radius, radius, radius, paint);
-            canvas.drawCircle(this.getWidth()-radius, radius, radius, paint);
-
-            canvas.drawCircle(radius, this.getHeight()-radius, radius, paint);
-            canvas.drawCircle(this.getWidth()-radius, this.getHeight()-radius, radius, paint);
-
-            paint.setColor(colorBack);
-            // left top
-            canvas.drawCircle(radius, radius, radius-4, paint);
-            canvas.drawRect(radius, 0, radius*2, radius*2, paint);
-            canvas.drawRect(0, radius, radius*2, radius*2, paint);
-            // right top
-            canvas.drawCircle(this.getWidth()-radius, radius, radius-4, paint);
-            canvas.drawRect(this.getWidth()-radius*2, 0, this.getWidth()-radius, radius*2, paint);
-            canvas.drawRect( this.getWidth()-radius*2, radius, this.getWidth(), radius*2, paint);
-            // left bottom
-            canvas.drawCircle(radius, this.getHeight()-radius, radius-4, paint);
-            canvas.drawRect(0, this.getHeight()-radius*2, radius*2, this.getHeight()-radius, paint);
-            canvas.drawRect(radius, this.getHeight()-radius, radius*2, this.getHeight(), paint);
-            // right bottom
-            canvas.drawCircle(this.getWidth()-radius, this.getHeight()-radius, radius-4, paint);
-            canvas.drawRect(this.getWidth()-radius*2, this.getHeight()-radius*2, this.getWidth(), this.getHeight()-radius, paint);
-            canvas.drawRect(this.getWidth()-radius*2, this.getHeight()-radius*2, this.getWidth()-radius, this.getHeight(), paint);
-            // draw top left right line
-            paint.setColor(colorPaint);
-            canvas.drawLine(radius, 0, this.getWidth()-radius, 0, paint);
-            canvas.drawLine(0, radius, 0, this.getHeight()-radius, paint);
-            canvas.drawLine(this.getWidth(), radius, this.getWidth(), this.getHeight()-radius, paint);
-            // draw down line
-            canvas.drawLine(radius, this.getHeight(), this.getWidth()-radius, this.getHeight(), paint);
-             // draw in Rect
-            paint.setColor(colorBack);
-            canvas.drawRect(radius*2, 4, this.getWidth()-radius*2, this.getHeight()-4, paint);
-        }
-        public SubYesNoButton(Context context, AttributeSet attrs)
-        {
-            super(context, attrs);
-        }
-        void setColorHigh(int color){
-        	colorBack = color;
-        }
-    }
-
-    public class BorderView extends TextView
-    {
-        //no_high:Color.rgb(220, 230, 242)
-        //high:Color.rgb(162, 205, 144)
-    	int colorBack;
-
-        @Override
-        protected void onDraw(Canvas canvas)
-        {
-            super.onDraw(canvas);
-            Paint paint = new Paint();
-            int radius = 30;
-            int colorPaint = Color.rgb(66, 120, 185);
-
-            paint.setColor(colorPaint);
-            paint.setStrokeWidth(8);
-            canvas.drawCircle(radius, radius, radius, paint);
-            canvas.drawCircle(this.getWidth()-radius, radius, radius, paint);
-
-            canvas.drawCircle(radius, this.getHeight()-radius, radius, paint);
-            canvas.drawCircle(this.getWidth()-radius, this.getHeight()-radius, radius, paint);
-
-            paint.setColor(colorBack);
-            // left top
-            canvas.drawCircle(radius, radius, radius-4, paint);
-            canvas.drawRect(radius, 0, radius*2, radius*2, paint);
-            canvas.drawRect(0, radius, radius*2, radius*2, paint);
-            // right top
-            canvas.drawCircle(this.getWidth()-radius, radius, radius-4, paint);
-            canvas.drawRect(this.getWidth()-radius*2, 0, this.getWidth()-radius, radius*2, paint);
-            canvas.drawRect( this.getWidth()-radius*2, radius, this.getWidth(), radius*2, paint);
-            // left bottom
-            canvas.drawCircle(radius, this.getHeight()-radius, radius-4, paint);
-            canvas.drawRect(0, this.getHeight()-radius*2, radius*2, this.getHeight()-radius, paint);
-            canvas.drawRect(radius, this.getHeight()-radius, radius*2, this.getHeight(), paint);
-            // right bottom
-            canvas.drawCircle(this.getWidth()-radius, this.getHeight()-radius, radius-4, paint);
-            canvas.drawRect(this.getWidth()-radius*2, this.getHeight()-radius*2, this.getWidth(), this.getHeight()-radius, paint);
-            canvas.drawRect(this.getWidth()-radius*2, this.getHeight()-radius*2, this.getWidth()-radius, this.getHeight(), paint);
-            // draw top left right line
-            paint.setColor(colorPaint);
-            canvas.drawLine(radius, 0, this.getWidth()-radius, 0, paint);
-            canvas.drawLine(0, radius, 0, this.getHeight()-radius, paint);
-            canvas.drawLine(this.getWidth(), radius, this.getWidth(), this.getHeight()-radius, paint);
-            // draw down line
-            canvas.drawLine(radius, this.getHeight(), this.getWidth()-radius, this.getHeight(), paint);
-             // draw in Rect
-            paint.setColor(colorBack);
-            canvas.drawRect(radius*2, 4, this.getWidth()-radius*2, this.getHeight()-4, paint);
-            canvas.drawRect(4, radius*2, this.getWidth()-4, this.getHeight()-radius*2, paint);
-        }
-        public BorderView(Context context, AttributeSet attrs)
-        {
-            super(context, attrs);
-        }
-        void setColorHigh(int color){
-        	colorBack = color;
         }
     }
 }
