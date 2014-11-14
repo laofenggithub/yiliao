@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <string name="app_name">yiliao422</string> -->
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="app_name">問診票</string>
+
+    <string name="title">問診票システム</string>
+    <string name="exit">終了</string>
+    <string name="titlePerson">受診者一覧</string> 
+    <string name="titleKind">問診票種別</string> 
+    <string name="date">受診日</string>
+    <string name="name">氏名</string>
+    <string name="age">年齢</string>
+    <string name="sex">性別</string>
+    <string name="waitText">受診者検索</string>
+    <string name="hospital">病院情報</string>
+    <string name="people">医療法人</string>
+    <string name="people_name">〇×会</string>
+    <string name="phone_lable">電話</string>
+    <string name="phone">(00)0000&#8211;0000</string>
+    <string name="fax_lable">Fax</string>
+    <string name="fax">(00)0000&#8211;0001</string>
+	<string name="zipcode">〒987&#8211;6543</string>
+    <string name="address">大阪府〇〇市△△町999&#8211;99</string>
+    <string name="hospital_name1">〇　〇　病院</string>
+    <string name="hospital_name2">健診センター</string>
+    <string name="next">次へ</string>
+    <string name="desc">no picture</string>
+    <color name="kuangcolor">#00000000</color>
+    <color name="listBackColor">#303030</color>
+    <color name="linecolor">#3A5FCD</color>
+
+    <style name="styleTitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#36648B</item>
+    </style>
+
+    <style name="styleTitleSub">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#36648B</item>
+    </style>
+
+    <style name="styleStartText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#36648B</item>
+    </style>
+
+    <style name="stylePerson">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#303030</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="styleKind">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#303030</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="styleButton">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#3A5FCD</item>
+    </style>
+
+    <style name="styleConfirm">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#36648B</item>
+    </style>
+
+    <string name="codingType">Shift-JIS</string>
+    <string name="path_hospital">/data/data/yiliao.data/hospital/hospital.csv</string>
+    <string name="path_person">/data/data/yiliao.data/person/person.csv</string>
+    <string name="path_questions">/data/data/yiliao.data/questions/questions.csv</string>
+    <string name="path_result">/data/data/yiliao.data/result/</string>
+    <string name="path_question">/data/data/yiliao.data/questions/</string>
+    <string name="str_hospital">中山会,宇都宮記念病院,健診センター,〒320-0811,栃木県宇都宮市大通り1-3-16,028-625-7831,028-611-5647</string>
+    <string name="str_questions1">tokutei,特定健康診断問診票</string>
+    <string name="str_questions2">seikatu,生活機能評価</string>
+    
+    <string name="str_split">\r\n</string>
+    
+    <string name="file_tokutei">tokutei</string>
+    <string name="file_seikatu">seikatu</string>
+    <string name="str_tokutei">1,バスや電車で1人で外出していますか;
+1,日用品の買物をしていますか;
+1,預貯金の出し入れをしていますか;
+1,友人の家を訪ねていますか;
+1,家族や友人の相談にのっていますか;
+1,階段を手すりや壁をつたわらずに昇っていますか;
+1,椅子に座った状態から何もつかまずに立ち上がっていますか;
+1,15分位続けて歩いていますか;
+1,この1年間に転んだことがありますか;
+1,転倒に対する不安は大きいですか;
+1,6ヶ月間で2〜3Kg以上の体重の減少がありますか;
+1,半年前に比べて固いものが食べにくくなりましたか;
+1,お茶や汁物等でむせることがありますか;
+1,口の渇きが気になりますか;
+1,週に一回以上は外出していますか;
+1,昨年と比べて外出の回数が減っていますか;
+1,周りの人から「いつも同じ事を聞く」などの物忘れがあると言われますか;
+1,自分で電話番号を調べて、電話をかけることをしていますか;
+1,今日が何月何日かわからない時がありますか;
+1,（ここ2週間）毎日の生活に充実感がない;
+1,（ここ2週間）これまで楽しんでやれていたことが楽しめなくなった;
+1,（ここ2週間）以前は楽にできていたことが今ではおっくうに感じられる;
+1,（ここ2週間）自分が役に立つ人間だと思えない;
+1,（ここ2週間）わけもなく疲れたような感じがする</string>
+    <string name="str_seikatu">2,現在、aからｃの薬の使用の有無,血圧を下げる薬,ｲﾝｽﾘﾝ注射または血糖を下げる薬,ｺﾚｽﾃﾛｰﾙを下げる薬;
+1,医師から、脳卒中（脳出血や脳梗塞等）にかかっているといわれたり、 治療を受けたことがありますか。;
+1,医師から、心臓病（狭心症や心筋梗塞等）にかかっているといわれたり、 治療を受けたことがありますか。;
+1,医師から、慢性の腎不全にかかっているといわれたり、治療（人工透析）を 受けたことがありますか。;
+1,医師から、貧血といわれたことがある。;
+1,現在、たばこを習慣的に吸っている。(※「現在、習慣的に喫煙している者」とは、「合計100本以上、または6ヶ月以上吸っている者」であり、最近１ヶ月間も吸っている者);
+1,20歳の時の体重から10kg以上増加している。;
+1,1回30分以上の軽く汗をかく運動を週2日以上、1年以上実施している。;
+1,日常生活において歩行または同等の身体活動を1日1時間以上実施している。;
+1,ほぼ同じ年齢の同性と比較して歩く速度が速い。;
+1,この1年間で体重の増減が±3kg以上あった。;
+3,人と比較して食べる速度が速い。,速い,普通,遅い;
+1,就寝前の2時間以内に夕食をとることが週に3回以上ある。;
+1,夕食後に間食（3食以外の夜食）をとることが週に3回以上ある。;
+1,朝食を抜くことが週に3回以上ある。;
+3,お酒（清酒、焼酎、ビール、洋酒等）を飲む頻度,毎日,時々,ほとんど飲まない（飲めない）;
+3,飲酒日の1日あたりの飲酒量 清酒1合（180ml）の目安：ビール中瓶1本（約500ml）、焼酎35度（80ml）、ウイスキーダブル1杯（60ml）、ワイン2杯（240ml）,１合未満,１〜２合未満,２〜３合未満,３合以上;
+1,睡眠で休養が十分とれている。;
+3,運動や食生活等の生活習慣を改善してみようと思いますか。,改善するつもりはない,改善するつもりである(概ね6か月以内),近いうちに(概ね1か月以内)改善するつもりであり、少しずつ始めている,既に改善に取り組んでいる（6か月未満）,既に改善に取り組んでいる（6か月以上）;
+1,生活習慣の改善について保健指導を受ける機会があれば、利用しますか。</string>
+<string name="str_person">2011/12/8,ケンシンカオリコ,健診香子,33,女,昭和52年7月12日,91023356,210,1006,日帰りドック;
+2011/12/9,ケンシンカオリコ1,健診香子1,34,男,昭和52年7月13日,91023357,211,1007,日帰りドック1;
+2011/12/10,ケンシンカオリコ2,健診香子2,35,女,昭和52年7月14日,91023358,212,1008,日帰りドック2;
+2011/12/11,ケンシンカオリコ3,健診香子3,36,男,昭和52年7月15日,91023359,213,1009,日帰りドック3;
+2011/12/12,ケンシンカオリコ4,健診香子4,37,女,昭和52年6月16日,91023360,214,1010,日帰りドック4;
+2011/12/13,ケンシンカオリコ5,健診香子5,38,男,昭和52年7月17日,91023361,215,1011,日帰りドック5;
+2011/12/14,ケンシンカオリコ6,健診香子6,39,女,昭和52年9月18日,91023362,216,1012,日帰りドック6;
+2011/12/15,ケンシンカオリコ7,健診香子7,40,男,昭和52年7月19日,91023363,217,1013,日帰りドック7;
+2011/12/16,ケンシンカオリコ8,健診香子8,41,女,昭和52年8月10日,91023364,218,1014,日帰りドック8;
+2011/12/17,ケンシンカオリコ9,健診香子9,42,男,昭和52年7月25日,91023365,219,1015,日帰りドック9</string>
+</resources>

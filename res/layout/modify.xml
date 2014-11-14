@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:text="@string/title"
+        style="@style/styleTitle"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/personname"
+            android:textStyle="bold"
+            android:textColor="#3A5FCD"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="健診者" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#3A5FCD"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="様" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="4dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/linecolor" />
+
+    <ScrollView 
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="360dp">
+
+<!--    <RelativeLayout 
+            android:id="@+id/RelativeList"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content">
+
+        	<TextView
+	            android:id="@+id/textView1"
+	            style="@style/styleConfirm"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginTop="15dp"
+	            android:text="1" />
+
+        	<TextView
+	            android:id="@+id/tvQuestion1"
+	            style="@style/styleConfirm"
+	            android:layout_width="250dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="35dp"
+	            android:layout_marginTop="15dp"
+	            android:text="現在、たばこを習慣的に吸っている。(※「現在、習慣的に喫煙している者」とは、「合計100本以上、または6ヶ月以上吸っている者」であり、最近１ヶ月間も吸っている者)" />
+
+        </RelativeLayout>
+-->	
+		<LinearLayout
+		    android:id="@+id/outlayout"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical">
+		    
+		</LinearLayout>
+	
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+		<ImageButton
+            android:id="@+id/ibtSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="175dp"
+            android:layout_marginTop="10dp"
+            android:background="#00000000"
+            android:src="@drawable/save" />
+
+		<TextView
+            android:id="@+id/textView1"
+            style="@style/styleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="195dp"
+            android:layout_marginTop="35dp"
+            android:text="保存" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:text="@string/title"
+        style="@style/styleTitle"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#3A5FCD"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="記入者確認" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="4dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/linecolor" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/styleConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:text="受診日" />
+
+        <TextView
+            style="@style/styleConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:text="カナ氏名" />
+        
+        <TextView
+            style="@style/styleConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="80dp"
+            android:text="漢字氏名" />
+        
+        <TextView
+            style="@style/styleConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="110dp"
+            android:text="年齢" />
+        
+        <TextView
+            style="@style/styleConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="140dp"
+            android:text="性別" />
+    
+        <TextView
+            style="@style/styleConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="170dp"
+            android:text="生年月日" />
+        
+        <TextView
+            style="@style/styleConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="200dp"
+            android:text="登録番号" />
+        
+        <TextView
+            style="@style/styleConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="230dp"
+            android:text="受診番号" />
+        
+        <TextView
+            style="@style/styleConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="260dp"
+            android:text="コース" />
+        
+         <TextView
+            style="@style/styleConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="290dp"
+            android:text="問診票種別" />
+         
+         
+         <TextView
+            android:id="@+id/tvDate"
+            style="@style/styleConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="20dp"
+            android:text="受診日" />
+
+        <TextView
+            android:id="@+id/tvKanaName"
+            style="@style/styleConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="50dp"
+            android:text="カナ氏名" />
+        
+        <TextView
+            android:id="@+id/tvKajiName"
+            style="@style/styleConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="80dp"
+            android:text="漢字氏名" />
+                
+        <TextView
+            android:id="@+id/tvAge"
+            style="@style/styleConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="110dp"
+            android:text="年齢" />
+        
+        <TextView
+            android:id="@+id/tvSex"
+            style="@style/styleConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="140dp"
+            android:text="性別" />
+    
+        <TextView
+            android:id="@+id/tvBirth"
+            style="@style/styleConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="170dp"
+            android:text="生年月日" />
+        
+        <TextView
+            android:id="@+id/tvPslid"
+            style="@style/styleConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="200dp"
+            android:text="登録番号" />
+        
+        <TextView
+            android:id="@+id/tvMano"
+            style="@style/styleConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="230dp"
+            android:text="受診番号" />
+        
+        <TextView
+            android:id="@+id/tvMccrse"
+            style="@style/styleConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="260dp"
+            android:text="コース" />
+        
+         <TextView
+             android:id="@+id/tvKind"
+            style="@style/styleConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="290dp"
+            android:text="問診票種別" />
+
+         <ImageButton
+             android:id="@+id/ibtBack"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="350dp"
+             android:src="@drawable/back"
+             android:background="#00000000"/>
+			
+          <TextView
+            style="@style/styleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="375dp"
+            android:text="戻る" />
+          
+          <ImageButton
+             android:id="@+id/ibtNext"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginRight="10dp"
+             android:layout_marginTop="350dp"
+             android:src="@drawable/next"
+             android:background="#00000000"/>
+         
+          <TextView
+            style="@style/styleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="375dp"
+            android:text="問診開始" />
+         
+    </RelativeLayout>
+    
+</LinearLayout>

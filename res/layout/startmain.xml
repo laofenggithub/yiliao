@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/exitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:background="#00000000"
+            android:src="@drawable/exit" 
+            android:contentDescription="@string/desc"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/styleTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/title" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/styleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/exitButton"
+            android:text="@string/exit" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lineout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/styleStartText"
+            android:text="@string/hospital" />
+
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/lout1"
+            android:layout_width="356dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:orientation="vertical"
+            android:background="@color/kuangcolor"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="3dp"
+            style="@style/styleStartText"
+            android:text="@string/people" />
+        
+         <TextView
+            android:id="@+id/tvIryou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="3dp"
+            style="@style/styleStartText"
+            android:text="@string/people_name" />
+         
+        　	　<LinearLayout         
+            android:id="@+id/lout2"
+            android:layout_width="226dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="45dp"
+            android:orientation="vertical"
+            android:background="@color/kuangcolor"/>
+
+ 		 <TextView
+            android:id="@+id/tvIenn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="70dp"
+            style="@style/styleStartText"
+            android:text="@string/hospital_name1" />
+
+                　   <LinearLayout
+            android:id="@+id/lout3"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="262dp"
+            android:layout_marginTop="45dp"
+            android:orientation="vertical"
+            android:background="@color/kuangcolor"/>
+                　	　
+   		 <TextView
+            android:id="@+id/tvKensin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="70dp"
+            style="@style/styleStartText"
+            android:text="@string/hospital_name2" />
+                
+         <LinearLayout
+            android:id="@+id/lout4"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="125dp"
+            android:orientation="vertical"
+            android:background="@color/kuangcolor"/>
+         
+         <TextView
+            android:id="@+id/tvZipcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="135dp"
+            style="@style/styleStartText"
+            android:text="@string/zipcode" />
+            		 
+         <LinearLayout
+            android:id="@+id/lout5"
+            android:layout_width="356dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="170dp"
+            android:orientation="vertical"
+            android:background="@color/kuangcolor"/>
+         
+         <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            style="@style/styleStartText"
+            android:text="@string/address" />
+
+         <LinearLayout
+            android:id="@+id/lout6"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="250dp"
+            android:orientation="vertical"
+            android:background="@color/kuangcolor"/>
+
+         <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="255dp"
+            style="@style/styleStartText"
+            android:text="@string/phone_lable" />
+
+                　   <LinearLayout
+            android:id="@+id/lout7"
+            android:layout_width="266dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="116dp"
+            android:layout_marginTop="250dp"
+            android:orientation="vertical"
+            android:background="@color/kuangcolor"/>
+                　   
+         <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="255dp"
+            style="@style/styleStartText"
+            android:text="@string/phone" />
+         
+         <LinearLayout
+            android:id="@+id/lout8"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="290dp"
+            android:orientation="vertical"
+            android:background="@color/kuangcolor"/>
+
+         <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="295dp"
+            style="@style/styleStartText"
+            android:text="@string/fax_lable" />
+                  
+                　   <LinearLayout
+            android:id="@+id/lout9"
+            android:layout_width="266dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="116dp"
+            android:layout_marginTop="290dp"
+            android:orientation="vertical"
+            android:background="@color/kuangcolor"/>
+                　   
+         <TextView
+            android:id="@+id/tvFax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="295dp"
+            style="@style/styleStartText"
+            android:text="@string/fax" />
+        </RelativeLayout>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/nextView"
+                style="@style/styleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/nextButton"
+                android:text="@string/next" />
+
+            <ImageButton
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="#00000000"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+</LinearLayout>
