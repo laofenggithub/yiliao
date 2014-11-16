@@ -1,6 +1,6 @@
 package yiliao.demo;
 
-import com.fs.yiliao.R;
+import yiliao.demo.R;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;

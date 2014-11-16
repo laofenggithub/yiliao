@@ -76,11 +76,12 @@
     </style>
 
     <string name="codingType">Shift-JIS</string>
-    <string name="path_hospital">/data/data/yiliao.data/hospital/hospital.csv</string>
-    <string name="path_person">/data/data/yiliao.data/person/person.csv</string>
-    <string name="path_questions">/data/data/yiliao.data/questions/questions.csv</string>
-    <string name="path_result">/data/data/yiliao.data/result/</string>
-    <string name="path_question">/data/data/yiliao.data/questions/</string>
+    <string name="path_hospital">/sdcard/data/yiliao.data/hospital/hospital.csv</string>
+    <string name="path_person_dir">/sdcard/data/yiliao.data/person</string>
+    <string name="path_person">/sdcard/data/yiliao.data/person/person.csv</string>
+    <string name="path_questions">/sdcard/data/yiliao.data/questions/questions.csv</string>
+    <string name="path_result">/sdcard/data/yiliao.data/result/</string>
+    <string name="path_question">/sdcard/data/yiliao.data/questions/</string>
     <string name="str_hospital">中山会,宇都宮記念病院,健診センター,〒320-0811,栃木県宇都宮市大通り1-3-16,028-625-7831,028-611-5647</string>
     <string name="str_questions1">tokutei,特定健康診断問診票</string>
     <string name="str_questions2">seikatu,生活機能評価</string>

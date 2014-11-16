@@ -1,6 +1,13 @@
 package yiliao.demo;
 
-import com.fs.yiliao.R;
+import java.io.File;
+
+import yiliao.demo.tool.BorderTextView;
+import yiliao.demo.tool.BorderView;
+import yiliao.demo.tool.MyToolKit;
+import yiliao.demo.tool.SubYesNoButton;
+
+import yiliao.demo.R;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -8,11 +15,10 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Bundle;
-import android.util.AttributeSet;
+import android.os.Environment;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -20,6 +26,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class StartActivity extends Activity {
 	private Paint paint = new Paint();//提取出onDraw中的
@@ -65,7 +72,28 @@ public class StartActivity extends Activity {
             test[i].setHeight(150);
             lout[i].addView(test[i]);
         }
-        // 初始化，创建写入要读取的数据文件
+        //判断是否有SDcard
+        boolean sdCardExist = Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED);   
+        if(!sdCardExist)  
+        {//如果不存在SD卡，进行提示  
+        	System.out.println("SDcard失败");
+            Toast.makeText(StartActivity.this, "请插入外部SD存储卡", Toast.LENGTH_SHORT).show();  
+     
+        };
+        // 初始化，创建文件夹，创建写入要读取的数据文件
+		File tempDir = new File(this.getString(R.string.path_person_dir));
+		if (!tempDir.exists()) {
+			System.out.println("创建path_person_dir目录成功1");
+			tempDir.mkdirs();
+		};
+//		tempDir = new File(this.getString(R.string.path_question));
+//		if (!tempDir.exists()) {
+//			tempDir.mkdirs();
+//		};
+//		tempDir = new File(this.getString(R.string.path_result));
+//		if (!tempDir.exists()) {
+//			tempDir.mkdirs();
+//		};
         MyToolKit.writeFileSdcard(this.getString(R.string.path_person), 
         						this.getString(R.string.str_person));
         MyToolKit.writeFileSdcard(this.getString(R.string.path_question)
@@ -76,7 +104,7 @@ public class StartActivity extends Activity {
         						this.getString(R.string.str_seikatu));
         
         // 读取文件
-        String info = readFileSdcard(this.getString(R.string.path_hospital));
+        String info = this.getString(R.string.str_hospital);//readFileSdcard(this.getString(R.string.path_hospital));
         String[] infoArray=info.split(",");
         for (int i = 0; i<7 ; i++){
         	hospitalInfo[i].setText(infoArray[i]);
@@ -194,21 +222,21 @@ public class StartActivity extends Activity {
         );
    }
 
-    // 读取CSV文件
-    public String readFileSdcard(String fileName){
-		String res=""; 
-		res=this.getString(R.string.str_hospital);
-//        try{ 
-//        	FileInputStream fin = new FileInputStream(fileName); 
-//        	int length = fin.available();
-//        	byte [] buffer = new byte[length];
-//        	fin.read(buffer);
-//        	res = EncodingUtils.getString(buffer, "Shift-JIS"); 
-//        	fin.close();     
-//        } 
-//        catch(Exception e){ 
-//        	e.printStackTrace(); 
-//        } 
-        return res; 
-	}
+//    // 读取CSV文件
+//    public String readFileSdcard(String fileName){
+//		String res=""; 
+//		res=this.getString(R.string.str_hospital);
+////        try{ 
+////        	FileInputStream fin = new FileInputStream(fileName); 
+////        	int length = fin.available();
+////        	byte [] buffer = new byte[length];
+////        	fin.read(buffer);
+////        	res = EncodingUtils.getString(buffer, "Shift-JIS"); 
+////        	fin.close();     
+////        } 
+////        catch(Exception e){ 
+////        	e.printStackTrace(); 
+////        } 
+//        return res; 
+//	}
 }
