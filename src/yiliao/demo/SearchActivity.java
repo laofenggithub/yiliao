@@ -19,11 +19,8 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.Paint;
 import android.os.Bundle;
-import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -68,7 +65,6 @@ public class SearchActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// HideStatusBar();
 		setContentView(R.layout.searchlayout);
 
 		lvPerson = (ListView) this.findViewById(R.id.lt1);
@@ -108,7 +104,7 @@ public class SearchActivity extends Activity {
 					int position, long id) {
 				Map<String, Object> kind = ltKind.get(position);
 
-				if (kind.get("status").toString().trim().equals("未記入")) {
+				if (kind.get("status").toString().trim().equals(getString(R.string.status))) {
 					// turn to 確認ページ
 					Intent intent = new Intent();
 					intent.setClass(SearchActivity.this, ConfirmActivity.class);
@@ -192,7 +188,7 @@ public class SearchActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// 終了
-				showDialog(SearchActivity.this, "問診票終了しますか");
+				showDialog(SearchActivity.this, getString(R.string.str_exitapp));
 			}
 		});
 
@@ -424,20 +420,6 @@ public class SearchActivity extends Activity {
 		toast.setView(layout);
 		toast.show();
 	}
-
-	/*
-	 * private void initKindFileName() { if
-	 * (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED))
-	 * { File path = Environment.getExternalStorageDirectory(); File file = new
-	 * File(path.getPath() + "/questions/"); File[] files = file.listFiles();
-	 * getFileName(files); } }
-	 * 
-	 * private void getFileName(File[] files) { for (File currentFile : files) {
-	 * if (currentFile.isDirectory()) { getFileName(currentFile.listFiles());
-	 * }else{ String fileName = currentFile.getName(); if
-	 * (fileName.endsWith(".csv")) ltKindFileName.add(fileName.substring(0,
-	 * fileName.lastIndexOf("."))); //ltKindFileName.add(fileName); } } }
-	 */
 
 	public final class personViewHolder {
 		public TextView date;

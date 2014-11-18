@@ -555,7 +555,7 @@ public class ModifyActivity extends Activity {
 		rButton.addView(chButton, lBtParams);
 
 		TextView tvChange = new TextView(this);
-		tvChange.setText("変更");
+		tvChange.setText(getString(R.string.str_change));
 		tvChange.setTextAppearance(this, R.style.styleButton);
 		RelativeLayout.LayoutParams rBtParams = new RelativeLayout.LayoutParams(
 				LinearLayout.LayoutParams.MATCH_PARENT,
