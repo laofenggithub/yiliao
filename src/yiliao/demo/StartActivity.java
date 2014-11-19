@@ -28,6 +28,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class StartActivity extends Activity {
+	
+	private final static int I_WIDTH = 600;
+	private final static int I_HEIGHT = 250;
+	
 	private TextView hospitalInfo[] = new TextView[7];
 	private BorderTextView test[] = new BorderTextView[9];
 	private LinearLayout lout[] = new LinearLayout[9];
@@ -41,6 +45,8 @@ public class StartActivity extends Activity {
 	private SubYesNoButton BtExitNo;
 	private LinearLayout layoutOut;
 	private BorderView BorderOut;
+	
+	
 
 	/** Called when the activity is first created. */
 	@Override
@@ -89,7 +95,6 @@ public class StartActivity extends Activity {
 			MyToolKit.writeFileSdcard(this.getString(R.string.path_person),
 					this.getString(R.string.str_person));
 		}
-		;
 		tempDir = new File(this.getString(R.string.path_question));
 		if (!tempDir.exists()) {
 			tempDir.mkdirs();
@@ -100,12 +105,10 @@ public class StartActivity extends Activity {
 					+ this.getString(R.string.file_seikatu),
 					this.getString(R.string.str_seikatu));
 		}
-		;
 		tempDir = new File(this.getString(R.string.path_result));
 		if (!tempDir.exists()) {
 			tempDir.mkdirs();
 		}
-		;
 
 		// 读取文件
 		String info = this.getString(R.string.str_hospital);// readFileSdcard(this.getString(R.string.path_hospital));
@@ -173,22 +176,22 @@ public class StartActivity extends Activity {
 
 		BtExitYes = new SubYesNoButton(this, null);
 		BtExitYes.setColorHigh(Color.rgb(205, 205, 132));
-		BtExitYes.setWidth(600);
-		BtExitYes.setHeight(250);
+		BtExitYes.setWidth(I_WIDTH);
+		BtExitYes.setHeight(I_HEIGHT);
 		BtExitYes.setBackgroundColor(Color.TRANSPARENT);
 		layoutYes.addView(BtExitYes);
 
 		BtExitNo = new SubYesNoButton(this, null);
 		BtExitNo.setColorHigh(Color.rgb(205, 205, 132));
-		BtExitNo.setWidth(600);
-		BtExitNo.setHeight(250);
+		BtExitNo.setWidth(I_WIDTH);
+		BtExitNo.setHeight(I_HEIGHT);
 		BtExitNo.setBackgroundColor(Color.TRANSPARENT);
 		layoutNo.addView(BtExitNo);
 
 		BorderOut = new BorderView(this, null);
 		BorderOut.setColorHigh(Color.rgb(154, 255, 154));
-		BorderOut.setWidth(600);
-		BorderOut.setHeight(250);
+		BorderOut.setWidth(I_WIDTH);
+		BorderOut.setHeight(I_HEIGHT);
 		BorderOut.setBackgroundColor(Color.TRANSPARENT);
 		layoutOut.addView(BorderOut);
 

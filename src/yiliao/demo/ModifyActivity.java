@@ -21,6 +21,10 @@ import android.widget.TextView;
 
 public class ModifyActivity extends Activity {
 	/** Called when the activity is first created. */
+	
+	private final static int I_WIDTH = 600;
+	private final static int I_HEIGHT = 250;
+	
 	private LinearLayout outLayout;
 	private SubYesNoButton btChange[];
 	private ImageButton btSave;
@@ -564,8 +568,8 @@ public class ModifyActivity extends Activity {
 		rButton.addView(tvChange, rBtParams);
 
 		button.setColorHigh(Color.rgb(220, 230, 242));
-		button.setWidth(600);
-		button.setHeight(250);
+		button.setWidth(I_WIDTH);
+		button.setHeight(I_HEIGHT);
 		button.setBackgroundColor(Color.TRANSPARENT);
 		chButton.addView(button);
 

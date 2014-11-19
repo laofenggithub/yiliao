@@ -15,7 +15,6 @@ public class BorderTextView extends TextView
     protected void onDraw(Canvas canvas)
     {
         super.onDraw(canvas);
-        //Paint paint = new Paint();
         
         paint.setColor(getResources().getColor(R.color.kuangcolor));
         paint.setStrokeWidth(8);

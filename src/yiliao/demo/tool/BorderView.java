@@ -15,7 +15,6 @@ public class BorderView extends TextView {
 	@Override
 	protected void onDraw(Canvas canvas) {
 		super.onDraw(canvas);
-		// Paint paint = new Paint();
 		int radius = 30;
 		int colorPaint = Color.rgb(66, 120, 185);
 

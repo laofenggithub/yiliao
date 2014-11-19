@@ -28,6 +28,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class QuestionActivity extends Activity {
+	
+	private final static int I_WIDTH = 600;
+	private final static int I_HEIGHT = 250;
+	private final static String STR_YES = "はい";
+	private final static String STR_NO = "いいえ";
+	
 	private TextView tvPersonName;
 	private QuestionTextView outView;
 	private QuestionTextView outViewHigh;
@@ -67,8 +73,6 @@ public class QuestionActivity extends Activity {
 	private LinearLayout layoutOut;
 	private BorderView Border;
 	
-	private final static String STR_YES = "はい";
-	private final static String STR_NO = "いいえ";
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -120,41 +124,41 @@ public class QuestionActivity extends Activity {
 		// init button「はい」、「いいえ」
         btYes = new YesNoButton(this,null);
         btYes.setColorHigh(Color.rgb(220, 230, 242));
-        btYes.setWidth(600);
-        btYes.setHeight(250);
+        btYes.setWidth(I_WIDTH);
+        btYes.setHeight(I_HEIGHT);
         btYes.setBackgroundColor(Color.TRANSPARENT);
         yesLayout.addView(btYes);
 
         btNo = new YesNoButton(this,null);
         btNo.setColorHigh(Color.rgb(220, 230, 242));
-        btNo.setWidth(600);
-        btNo.setHeight(250);
+        btNo.setWidth(I_WIDTH);
+        btNo.setHeight(I_HEIGHT);
         btNo.setBackgroundColor(Color.TRANSPARENT);
         noLayout.addView(btNo);
 
 		for(int i=0; i<4; i++){
 			btSubYes[i] = new SubYesNoButton(this,null);
 			btSubYes[i].setColorHigh(Color.rgb(220, 230, 242));
-			btSubYes[i].setWidth(600);
-			btSubYes[i].setHeight(250);
+			btSubYes[i].setWidth(I_WIDTH);
+			btSubYes[i].setHeight(I_HEIGHT);
 			btSubYes[i].setBackgroundColor(Color.TRANSPARENT);
 			subyesLayout[i].addView(btSubYes[i]);
 			
 			btSubNo[i] = new SubYesNoButton(this,null);
 			btSubNo[i].setColorHigh(Color.rgb(220, 230, 242));
-			btSubNo[i].setWidth(600);
-			btSubNo[i].setHeight(250);
+			btSubNo[i].setWidth(I_WIDTH);
+			btSubNo[i].setHeight(I_HEIGHT);
 			btSubNo[i].setBackgroundColor(Color.TRANSPARENT);
 			subnoLayout[i].addView(btSubNo[i]);
 		}
 
         outView = new QuestionTextView(this,null);
-        outView.setWidth(600);
-        outView.setHeight(250);
+        outView.setWidth(I_WIDTH);
+        outView.setHeight(I_HEIGHT);
 
         outViewHigh = new QuestionTextView(this,null);
-        outViewHigh.setWidth(600);
-        outViewHigh.setHeight(250);
+        outViewHigh.setWidth(I_WIDTH);
+        outViewHigh.setHeight(I_HEIGHT);
 
         layoutQuestionHigh.addView(outViewHigh);
         layoutQuestion.addView(outView);
@@ -173,8 +177,8 @@ public class QuestionActivity extends Activity {
         for(int i=0; i<5; i++){
         	itemAnswer[i] = new SubYesNoButton(this,null);
         	itemAnswer[i].setColorHigh(Color.rgb(220, 230, 242));
-        	itemAnswer[i].setWidth(600);
-        	itemAnswer[i].setHeight(250);
+        	itemAnswer[i].setWidth(I_WIDTH);
+        	itemAnswer[i].setHeight(I_HEIGHT);
         	itemAnswer[i].setBackgroundColor(Color.TRANSPARENT);
         	itemLay[i].addView(itemAnswer[i]);
         }
@@ -653,8 +657,8 @@ public class QuestionActivity extends Activity {
           
           Border = new BorderView(this,null);
           Border.setColorHigh(Color.rgb(154, 255, 154));
-          Border.setWidth(600);
-          Border.setHeight(250);
+          Border.setWidth(I_WIDTH);
+          Border.setHeight(I_HEIGHT);
           Border.setBackgroundColor(Color.TRANSPARENT);
           layoutOut.addView(Border);
           

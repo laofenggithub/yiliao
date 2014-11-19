@@ -33,6 +33,7 @@
     <string name="str_answer">この質問を答えしてください</string>
     <string name="str_change">変更</string>
     <string name="desc">no picture</string>
+    
     <color name="kuangcolor">#00000000</color>
     <color name="listBackColor">#303030</color>
     <color name="linecolor">#3A5FCD</color>

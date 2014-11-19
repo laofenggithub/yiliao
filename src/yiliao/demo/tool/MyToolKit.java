@@ -6,18 +6,6 @@ import java.io.FileOutputStream;
 
 import org.apache.http.util.EncodingUtils;
 
-import yiliao.demo.R;
-
-import android.graphics.Color;
-import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 /**
  * 
  * 功能：读取文件，写入文件
@@ -44,10 +32,10 @@ public class MyToolKit {
 	}
     // 写入文件
     public static void writeFileSdcard(String fileName,String message){ 
-    	System.out.println("文件@"+"fileName"+"@"+"！");
+    	System.out.println("开始写文件@"+fileName+"@"+"！");
     	File file = new File(fileName);
     	if (file.exists()) {
-			System.out.println("文件@"+"fileName"+"@"+"已存在！");
+			System.out.println("文件@"+fileName+"@"+"已存在！");
 			return;
 		}
     	try{

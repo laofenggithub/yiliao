@@ -40,6 +40,10 @@ import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 
 public class SearchActivity extends Activity {
+	
+	private final static int I_WIDTH = 600;
+	private final static int I_HEIGHT = 250;
+	
 	private ListView lvPerson = null;
 	private ListView lvKind = null;
 	private ImageButton btiSearch;
@@ -352,22 +356,22 @@ public class SearchActivity extends Activity {
 
 		BtExitYes = new SubYesNoButton(this, null);
 		BtExitYes.setColorHigh(Color.rgb(205, 205, 132));
-		BtExitYes.setWidth(600);
-		BtExitYes.setHeight(250);
+		BtExitYes.setWidth(I_WIDTH);
+		BtExitYes.setHeight(I_HEIGHT);
 		BtExitYes.setBackgroundColor(Color.TRANSPARENT);
 		layoutYes.addView(BtExitYes);
 
 		BtExitNo = new SubYesNoButton(this, null);
 		BtExitNo.setColorHigh(Color.rgb(205, 205, 132));
-		BtExitNo.setWidth(600);
-		BtExitNo.setHeight(250);
+		BtExitNo.setWidth(I_WIDTH);
+		BtExitNo.setHeight(I_HEIGHT);
 		BtExitNo.setBackgroundColor(Color.TRANSPARENT);
 		layoutNo.addView(BtExitNo);
 
 		BorderOut = new BorderView(this, null);
 		BorderOut.setColorHigh(Color.rgb(154, 255, 154));
-		BorderOut.setWidth(600);
-		BorderOut.setHeight(250);
+		BorderOut.setWidth(I_WIDTH);
+		BorderOut.setHeight(I_HEIGHT);
 		BorderOut.setBackgroundColor(Color.TRANSPARENT);
 		layoutOut.addView(BorderOut);
 
@@ -406,8 +410,8 @@ public class SearchActivity extends Activity {
 
 		Border = new BorderView(this, null);
 		Border.setColorHigh(Color.rgb(154, 255, 154));
-		Border.setWidth(600);
-		Border.setHeight(250);
+		Border.setWidth(I_WIDTH);
+		Border.setHeight(I_HEIGHT);
 		Border.setBackgroundColor(Color.TRANSPARENT);
 		layoutOut.addView(Border);
 

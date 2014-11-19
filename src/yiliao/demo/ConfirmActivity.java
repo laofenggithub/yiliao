@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 public class ConfirmActivity extends Activity {
 	/** Called when the activity is first created. */
+	
 	private TextView tvDate;
 	private TextView tvKanaName;
 	private TextView tvKajiName;
