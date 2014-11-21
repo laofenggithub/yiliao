@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- <string name="app_name">yiliao422</string> -->
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     
@@ -28,10 +27,14 @@
     <string name="hospital_name1">〇　〇　病院</string>
     <string name="hospital_name2">健診センター</string>
     <string name="next">次へ</string>
+    <string name="str_back">戻る</string>
     <string name="status">未記入</string>
     <string name="str_exitapp">問診票終了しますか</string>
     <string name="str_answer">この質問を答えしてください</string>
     <string name="str_change">変更</string>
+    <string name="str_question_page1">健診者</string>
+    <string name="str_question_page2">様</string>
+    <string name="str_question_page3">xx/xx</string>
     <string name="desc">no picture</string>
     
     <color name="kuangcolor">#00000000</color>
@@ -91,10 +94,11 @@
     <string name="str_questions1">tokutei,特定健康診断問診票</string>
     <string name="str_questions2">seikatu,生活機能評価</string>
     
-    <string name="str_split">\r\n</string>
+    <!-- \r\n -->
+    <string name="str_split">;</string>
     
-    <string name="file_tokutei">tokutei</string>
-    <string name="file_seikatu">seikatu</string>
+    <string name="file_tokutei">tokutei.csv</string>
+    <string name="file_seikatu">seikatu.csv</string>
     <string name="str_tokutei">1,バスや電車で1人で外出していますか;
 1,日用品の買物をしていますか;
 1,預貯金の出し入れをしていますか;

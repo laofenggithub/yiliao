@@ -401,7 +401,6 @@ public class QuestionActivity extends Activity {
 					public void onClick(View v) {
         				// next to question
         				if( currentCount >= questionCounts ){
-//        					showToast("問題がありません。");
         					showModify();
         				}else{
         					clickAllYesNoButton();
