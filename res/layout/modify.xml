@@ -27,11 +27,11 @@
         <TextView
             android:id="@+id/personname"
             android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="健診者" />
+            android:text="@string/str_question_page1" />
 
         <TextView
             android:layout_width="10dp"
@@ -39,11 +39,11 @@
 
         <TextView
             android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="様" />
+            android:text="@string/str_question_page2" />
     </LinearLayout>
 
     <TextView
@@ -60,39 +60,10 @@
         android:layout_width="fill_parent"
         android:layout_height="360dp">
 
-<!--    <RelativeLayout 
-            android:id="@+id/RelativeList"
-		    android:layout_width="fill_parent"
-		    android:layout_height="wrap_content">
-
-        	<TextView
-	            android:id="@+id/textView1"
-	            style="@style/styleConfirm"
-	            android:layout_width="wrap_content"
-	            android:layout_height="wrap_content"
-	            android:layout_alignParentLeft="true"
-	            android:layout_alignParentTop="true"
-	            android:layout_marginLeft="15dp"
-	            android:layout_marginTop="15dp"
-	            android:text="1" />
-
-        	<TextView
-	            android:id="@+id/tvQuestion1"
-	            style="@style/styleConfirm"
-	            android:layout_width="250dp"
-	            android:layout_height="wrap_content"
-	            android:layout_alignParentLeft="true"
-	            android:layout_alignParentTop="true"
-	            android:layout_marginLeft="35dp"
-	            android:layout_marginTop="15dp"
-	            android:text="現在、たばこを習慣的に吸っている。(※「現在、習慣的に喫煙している者」とは、「合計100本以上、または6ヶ月以上吸っている者」であり、最近１ヶ月間も吸っている者)" />
-
-        </RelativeLayout>
--->	
 		<LinearLayout
 		    android:id="@+id/outlayout"
-		    android:layout_width="match_parent"
-		    android:layout_height="match_parent"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
 		    android:orientation="vertical">
 		    
 		</LinearLayout>
@@ -112,6 +83,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="175dp"
             android:layout_marginTop="10dp"
+            android:contentDescription="@string/useless"
             android:background="#00000000"
             android:src="@drawable/save" />
 
@@ -124,7 +96,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="195dp"
             android:layout_marginTop="35dp"
-            android:text="保存" />
+            android:text="@string/str_save" />
 
     </RelativeLayout>
 </LinearLayout>

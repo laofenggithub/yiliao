@@ -27,11 +27,11 @@
         <TextView
             android:id="@+id/personname"
             android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="健診者" />
+            android:text="@string/str_question_page1" />
 
         <TextView
             android:layout_width="10dp"
@@ -39,11 +39,11 @@
 
         <TextView
             android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="様" />
+            android:text="@string/str_question_page2" />
     </LinearLayout>
 
     <TextView
@@ -68,6 +68,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginRight="10dp"
             android:layout_marginTop="360dp"
+            android:contentDescription="@string/useless"
             android:background="#00000000"
             android:src="@drawable/next" />
 
@@ -80,7 +81,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginRight="80dp"
             android:layout_marginTop="385dp"
-            android:text="変更" />
+            android:text="@string/str_change" />
 
 		<TextView
             android:id="@+id/pageNo"
@@ -91,21 +92,13 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="180dp"
             android:layout_marginTop="390dp"
-            android:text="xx/xx" />
+            android:text="@string/str_pageNo" />
 
-<!-- 		<ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/dialog"/>
- -->
  		<LinearLayout
  		    android:id="@+id/question"
  		    android:layout_width="320dp"
             android:layout_height="120dp"
+            android:orientation="horizontal"
  		    android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="40dp"
@@ -115,6 +108,7 @@
  		    android:id="@+id/questionHigh"
  		    android:layout_width="320dp"
             android:layout_height="140dp"
+            android:orientation="horizontal"
  		    android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="40dp"
@@ -122,8 +116,8 @@
 
  		<TextView android:id="@+id/questionText"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
    		    android:layout_width="266dp"
             android:layout_height="70dp"
  		    android:layout_alignParentLeft="true"
@@ -132,12 +126,12 @@
             android:layout_marginTop="40dp"
             android:gravity="center_vertical"
             android:visibility="invisible"
-            android:text="short"/>
+            android:text="@string/placeholder"/>
 
  		 <TextView android:id="@+id/questionTextHigh"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
    		    android:layout_width="266dp"
             android:layout_height="wrap_content"
  		    android:layout_alignParentLeft="true"
@@ -146,7 +140,7 @@
             android:layout_marginTop="40dp"
             android:gravity="center_vertical"
             android:visibility="invisible"
-            android:text="high"/>
+            android:text="@string/placeholder"/>
 <!--  		 
  		<Button
  		    android:id="@+id/yes"
@@ -183,13 +177,14 @@
  		    android:layout_height="70dp"
  		    android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
+            android:orientation="horizontal"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="200dp" />
  		
  		<TextView android:id="@+id/btyestext"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
   		    android:layout_width="130dp"
  		    android:layout_height="70dp"
  		    android:layout_alignParentLeft="true"
@@ -198,12 +193,13 @@
             android:layout_marginTop="200dp"
             android:gravity="center"
             android:visibility="invisible"
-            android:text="はい"/>
+            android:text="@string/str_yes"/>
  		
  		<LinearLayout
  		    android:id="@+id/nolayout"
  		    android:layout_width="130dp"
  		    android:layout_height="70dp"
+ 		    android:orientation="horizontal"
  		    android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:layout_marginRight="60dp"
@@ -211,8 +207,8 @@
  		
  		<TextView android:id="@+id/btnotext"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
  		    android:layout_width="130dp"
  		    android:layout_height="70dp"
  		    android:layout_alignParentRight="true"
@@ -221,12 +217,12 @@
             android:layout_marginTop="200dp"
             android:gravity="center"
             android:visibility="invisible"
-            android:text="いいえ"/>
+            android:text="@string/str_no"/>
  		
  		<TextView android:id="@+id/subquestion1"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
  		    android:layout_width="200dp"
  		    android:layout_height="35dp"
  		    android:layout_alignParentLeft="true"
@@ -235,12 +231,12 @@
             android:layout_marginTop="160dp"
             android:gravity="center_vertical"
             android:visibility="invisible"
-            android:text="ああああああああああああああああああああ"/>
+            android:text="@string/placeholder"/>
  		
  		<TextView android:id="@+id/subquestion2"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
  		    android:layout_width="200dp"
  		    android:layout_height="35dp"
  		    android:layout_alignParentLeft="true"
@@ -249,12 +245,12 @@
             android:layout_marginTop="205dp"
             android:gravity="center_vertical"
             android:visibility="invisible"
-            android:text="ああああああああああああああああああああ"/>
+            android:text="@string/placeholder"/>
  		
  		<TextView android:id="@+id/subquestion3"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
  		    android:layout_width="200dp"
  		    android:layout_height="35dp"
  		    android:layout_alignParentLeft="true"
@@ -263,12 +259,12 @@
             android:layout_marginTop="250dp"
             android:gravity="center_vertical"
             android:visibility="invisible"
-            android:text="ああああああああああああああああああああ"/>
+            android:text="@string/placeholder"/>
  		 
  		<TextView android:id="@+id/subquestion4"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
  		    android:layout_width="200dp"
  		    android:layout_height="35dp"
  		    android:layout_alignParentLeft="true"
@@ -277,11 +273,12 @@
             android:layout_marginTop="290dp"
             android:gravity="center_vertical"
             android:visibility="invisible"
-            android:text="ああああああああああああああああああああ"/>
+            android:text="@string/placeholder"/>
 		
  		<LinearLayout android:id="@+id/subYesLay1"
  		    android:layout_width="55dp"
  		    android:layout_height="35dp"
+ 		    android:orientation="horizontal"
  		    android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="250dp"
@@ -290,8 +287,8 @@
  		
   		<TextView android:id="@+id/subBtYes1"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
  		    android:layout_width="55dp"
  		    android:layout_height="35dp"
  		    android:layout_alignParentLeft="true"
@@ -300,11 +297,12 @@
             android:layout_marginTop="160dp"
             android:gravity="center"
             android:visibility="invisible"
-            android:text="はい"/>	
+            android:text="@string/str_yes"/>	
             
  		<LinearLayout android:id="@+id/subNoLay1"
  		    android:layout_width="55dp"
  		    android:layout_height="35dp"
+ 		    android:orientation="horizontal"
  		    android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="315dp"
@@ -313,8 +311,8 @@
  		
  		<TextView android:id="@+id/subBtNo1"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
  		    android:layout_width="55dp"
  		    android:layout_height="35dp"
  		    android:layout_alignParentLeft="true"
@@ -323,11 +321,12 @@
             android:layout_marginTop="160dp"
             android:gravity="center"
             android:visibility="invisible"
-            android:text="いいえ"/>
+            android:text="@string/str_no"/>
  		
  		<LinearLayout android:id="@+id/subYesLay2"
  		    android:layout_width="55dp"
  		    android:layout_height="35dp"
+ 		    android:orientation="horizontal"
  		    android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="250dp"
@@ -336,8 +335,8 @@
  		
   		<TextView android:id="@+id/subBtYes2"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
  		    android:layout_width="55dp"
  		    android:layout_height="35dp"
  		    android:layout_alignParentLeft="true"
@@ -346,11 +345,12 @@
             android:layout_marginTop="205dp"
             android:gravity="center"
             android:visibility="invisible"
-            android:text="はい"/>	
+            android:text="@string/str_yes"/>	
             
  		<LinearLayout android:id="@+id/subNoLay2"
  		    android:layout_width="55dp"
  		    android:layout_height="35dp"
+ 		    android:orientation="horizontal"
  		    android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="315dp"
@@ -359,8 +359,8 @@
  		
  		<TextView android:id="@+id/subBtNo2"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
  		    android:layout_width="55dp"
  		    android:layout_height="35dp"
  		    android:layout_alignParentLeft="true"
@@ -369,11 +369,12 @@
             android:layout_marginTop="205dp"
             android:gravity="center"
             android:visibility="invisible"
-            android:text="いいえ"/>
+            android:text="@string/str_no"/>
  		
  		<LinearLayout android:id="@+id/subYesLay3"
  		    android:layout_width="55dp"
  		    android:layout_height="35dp"
+ 		    android:orientation="horizontal"
  		    android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="250dp"
@@ -382,8 +383,8 @@
  		
   		<TextView android:id="@+id/subBtYes3"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
  		    android:layout_width="55dp"
  		    android:layout_height="35dp"
  		    android:layout_alignParentLeft="true"
@@ -392,11 +393,12 @@
             android:layout_marginTop="250dp"
             android:gravity="center"
             android:visibility="invisible"
-            android:text="はい"/>	
+            android:text="@string/str_yes"/>	
             
  		<LinearLayout android:id="@+id/subNoLay3"
  		    android:layout_width="55dp"
  		    android:layout_height="35dp"
+ 		    android:orientation="horizontal"
  		    android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="315dp"
@@ -405,8 +407,8 @@
  		
  		<TextView android:id="@+id/subBtNo3"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
  		    android:layout_width="55dp"
  		    android:layout_height="35dp"
  		    android:layout_alignParentLeft="true"
@@ -415,11 +417,12 @@
             android:layout_marginTop="250dp"
             android:gravity="center"
             android:visibility="invisible"
-            android:text="いいえ"/>
+            android:text="@string/str_no"/>
  		
  		<LinearLayout android:id="@+id/subYesLay4"
  		    android:layout_width="55dp"
  		    android:layout_height="35dp"
+ 		    android:orientation="horizontal"
  		    android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="250dp"
@@ -428,8 +431,8 @@
  		
   		<TextView android:id="@+id/subBtYes4"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
  		    android:layout_width="55dp"
  		    android:layout_height="35dp"
  		    android:layout_alignParentLeft="true"
@@ -438,11 +441,12 @@
             android:layout_marginTop="290dp"
             android:gravity="center"
             android:visibility="invisible"
-            android:text="はい"/>	
+            android:text="@string/str_yes"/>	
             
  		<LinearLayout android:id="@+id/subNoLay4"
  		    android:layout_width="55dp"
  		    android:layout_height="35dp"
+ 		    android:orientation="horizontal"
  		    android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="315dp"
@@ -451,8 +455,8 @@
  		
  		<TextView android:id="@+id/subBtNo4"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
  		    android:layout_width="55dp"
  		    android:layout_height="35dp"
  		    android:layout_alignParentLeft="true"
@@ -461,11 +465,12 @@
             android:layout_marginTop="290dp"
             android:gravity="center"
             android:visibility="invisible"
-            android:text="いいえ"/>
+            android:text="@string/str_no"/>
  		
  		<LinearLayout android:id="@+id/itemLay1"
  		    android:layout_width="300dp"
  		    android:layout_height="35dp"
+ 		    android:orientation="horizontal"
  		    android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="50dp"
@@ -474,8 +479,8 @@
  		
  		<TextView android:id="@+id/itemAnswerText1"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="12dp"
+            android:textColor="@color/linecolor"
+            android:textSize="12sp"
  		    android:layout_width="290dp"
  		    android:layout_height="35dp"
  		    android:layout_alignParentLeft="true"
@@ -484,11 +489,12 @@
             android:layout_marginTop="160dp"
             android:gravity="center"
             android:visibility="invisible"
-            android:text="ああああああああああああああああああああああああああああ"/>
+            android:text="@string/placeholder"/>
  		
  		<LinearLayout android:id="@+id/itemLay2"
  		    android:layout_width="300dp"
  		    android:layout_height="35dp"
+ 		    android:orientation="horizontal"
  		    android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="50dp"
@@ -497,8 +503,8 @@
  		
  		<TextView android:id="@+id/itemAnswerText2"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="12dp"
+            android:textColor="@color/linecolor"
+            android:textSize="12sp"
  		    android:layout_width="290dp"
  		    android:layout_height="35dp"
  		    android:layout_alignParentLeft="true"
@@ -507,11 +513,12 @@
             android:layout_marginTop="200dp"
             android:gravity="center"
             android:visibility="invisible"
-            android:text="ああああああああああああああああああああああああああああ"/>
+            android:text="@string/placeholder"/>
  		
  		<LinearLayout android:id="@+id/itemLay3"
  		    android:layout_width="300dp"
  		    android:layout_height="35dp"
+ 		    android:orientation="horizontal"
  		    android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="50dp"
@@ -520,8 +527,8 @@
  		
  		<TextView android:id="@+id/itemAnswerText3"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="12dp"
+            android:textColor="@color/linecolor"
+            android:textSize="12sp"
  		    android:layout_width="290dp"
  		    android:layout_height="35dp"
  		    android:layout_alignParentLeft="true"
@@ -530,11 +537,12 @@
             android:layout_marginTop="240dp"
             android:gravity="center"
             android:visibility="invisible"
-            android:text="ああああああああああああああああああああああああああああ"/>
+            android:text="@string/placeholder"/>
 
  		<LinearLayout android:id="@+id/itemLay4"
  		    android:layout_width="300dp"
  		    android:layout_height="35dp"
+ 		    android:orientation="horizontal"
  		    android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="50dp"
@@ -543,8 +551,8 @@
  		
  		<TextView android:id="@+id/itemAnswerText4"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="12dp"
+            android:textColor="@color/linecolor"
+            android:textSize="12sp"
  		    android:layout_width="290dp"
  		    android:layout_height="35dp"
  		    android:layout_alignParentLeft="true"
@@ -553,11 +561,12 @@
             android:layout_marginTop="280dp"
             android:gravity="center"
             android:visibility="invisible"
-            android:text="ああああああああああああああああああああああああああああ"/>
+            android:text="@string/placeholder"/>
  		
  		<LinearLayout android:id="@+id/itemLay5"
  		    android:layout_width="300dp"
  		    android:layout_height="35dp"
+ 		    android:orientation="horizontal"
  		    android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="50dp"
@@ -566,8 +575,8 @@
  		
  		<TextView android:id="@+id/itemAnswerText5"
  		    android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="12dp"
+            android:textColor="@color/linecolor"
+            android:textSize="12sp"
  		    android:layout_width="290dp"
  		    android:layout_height="35dp"
  		    android:layout_alignParentLeft="true"
@@ -576,7 +585,7 @@
             android:layout_marginTop="320dp"
             android:gravity="center"
             android:visibility="invisible"
-            android:text="ああああああああああああああああああああああああああああ"/>
+            android:text="@string/placeholder"/>
  		
     </RelativeLayout>
 </LinearLayout>

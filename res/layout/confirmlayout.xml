@@ -22,11 +22,11 @@
 
         <TextView
             android:textStyle="bold"
-            android:textColor="#3A5FCD"
-            android:textSize="14dp"
+            android:textColor="@color/linecolor"
+            android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="記入者確認" />
+            android:text="@string/str_confirm_page" />
     </LinearLayout>
 
     <TextView
@@ -37,7 +37,7 @@
         android:layout_width="fill_parent"
         android:layout_height="1dp"
         android:background="@color/linecolor" />
-
+    
     <RelativeLayout
         android:id="@+id/relativeLayout1"
         android:layout_width="match_parent"
@@ -51,7 +51,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
-            android:text="受診日" />
+            android:text="@string/str_confirm_page1" />
 
         <TextView
             style="@style/styleConfirm"
@@ -61,7 +61,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="50dp"
-            android:text="カナ氏名" />
+            android:text="@string/str_confirm_page2" />
         
         <TextView
             style="@style/styleConfirm"
@@ -71,7 +71,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="80dp"
-            android:text="漢字氏名" />
+            android:text="@string/str_confirm_page3" />
         
         <TextView
             style="@style/styleConfirm"
@@ -81,7 +81,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="110dp"
-            android:text="年齢" />
+            android:text="@string/str_confirm_page4" />
         
         <TextView
             style="@style/styleConfirm"
@@ -91,7 +91,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="140dp"
-            android:text="性別" />
+            android:text="@string/str_confirm_page5" />
     
         <TextView
             style="@style/styleConfirm"
@@ -101,7 +101,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="170dp"
-            android:text="生年月日" />
+            android:text="@string/str_confirm_page6" />
         
         <TextView
             style="@style/styleConfirm"
@@ -111,7 +111,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="200dp"
-            android:text="登録番号" />
+            android:text="@string/str_confirm_page7" />
         
         <TextView
             style="@style/styleConfirm"
@@ -121,7 +121,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="230dp"
-            android:text="受診番号" />
+            android:text="@string/str_confirm_page8" />
         
         <TextView
             style="@style/styleConfirm"
@@ -131,7 +131,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="260dp"
-            android:text="コース" />
+            android:text="@string/str_confirm_page9" />
         
          <TextView
             style="@style/styleConfirm"
@@ -141,7 +141,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="290dp"
-            android:text="問診票種別" />
+            android:text="@string/str_confirm_page10" />
          
          
          <TextView
@@ -153,7 +153,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="180dp"
             android:layout_marginTop="20dp"
-            android:text="受診日" />
+            android:text="@string/str_confirm_page1" />
 
         <TextView
             android:id="@+id/tvKanaName"
@@ -164,7 +164,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="180dp"
             android:layout_marginTop="50dp"
-            android:text="カナ氏名" />
+            android:text="@string/str_confirm_page2" />
         
         <TextView
             android:id="@+id/tvKajiName"
@@ -175,7 +175,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="180dp"
             android:layout_marginTop="80dp"
-            android:text="漢字氏名" />
+            android:text="@string/str_confirm_page3" />
                 
         <TextView
             android:id="@+id/tvAge"
@@ -186,7 +186,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="180dp"
             android:layout_marginTop="110dp"
-            android:text="年齢" />
+            android:text="@string/str_confirm_page4" />
         
         <TextView
             android:id="@+id/tvSex"
@@ -197,7 +197,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="180dp"
             android:layout_marginTop="140dp"
-            android:text="性別" />
+            android:text="@string/str_confirm_page5" />
     
         <TextView
             android:id="@+id/tvBirth"
@@ -208,7 +208,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="180dp"
             android:layout_marginTop="170dp"
-            android:text="生年月日" />
+            android:text="@string/str_confirm_page6" />
         
         <TextView
             android:id="@+id/tvPslid"
@@ -219,7 +219,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="180dp"
             android:layout_marginTop="200dp"
-            android:text="登録番号" />
+            android:text="@string/str_confirm_page7" />
         
         <TextView
             android:id="@+id/tvMano"
@@ -230,7 +230,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="180dp"
             android:layout_marginTop="230dp"
-            android:text="受診番号" />
+            android:text="@string/str_confirm_page8" />
         
         <TextView
             android:id="@+id/tvMccrse"
@@ -241,7 +241,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="180dp"
             android:layout_marginTop="260dp"
-            android:text="コース" />
+            android:text="@string/str_confirm_page9" />
         
          <TextView
              android:id="@+id/tvKind"
@@ -252,7 +252,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="180dp"
             android:layout_marginTop="290dp"
-            android:text="問診票種別" />
+            android:text="@string/str_confirm_page10" />
 
          <ImageButton
              android:id="@+id/ibtBack"
@@ -262,8 +262,9 @@
              android:layout_alignParentTop="true"
              android:layout_marginLeft="10dp"
              android:layout_marginTop="350dp"
+             android:contentDescription="@string/useless"
              android:src="@drawable/back"
-             android:background="#00000000"/>
+             android:background="@color/kuangcolor"/>
 			
           <TextView
             style="@style/styleButton"
@@ -273,7 +274,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="80dp"
             android:layout_marginTop="375dp"
-            android:text="戻る" />
+            android:text="@string/str_back" />
           
           <ImageButton
              android:id="@+id/ibtNext"
@@ -284,7 +285,8 @@
              android:layout_marginRight="10dp"
              android:layout_marginTop="350dp"
              android:src="@drawable/next"
-             android:background="#00000000"/>
+             android:contentDescription="@string/useless"
+             android:background="@color/kuangcolor"/>
          
           <TextView
             style="@style/styleButton"
@@ -294,7 +296,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginRight="80dp"
             android:layout_marginTop="375dp"
-            android:text="問診開始" />
+            android:text="@string/str_confirm_page11" />
          
     </RelativeLayout>
     

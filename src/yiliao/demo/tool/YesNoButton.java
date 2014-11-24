@@ -12,6 +12,7 @@ public class YesNoButton extends Button {
 	// high:Color.rgb(162, 205, 144)
 	int colorBack;
 	private Paint paint = new Paint();
+
 	@Override
 	protected void onDraw(Canvas canvas) {
 		super.onDraw(canvas);
@@ -65,6 +66,8 @@ public class YesNoButton extends Button {
 		paint.setColor(colorBack);
 		canvas.drawRect(radius * 2, 4, this.getWidth() - radius * 2,
 				this.getHeight() - 4, paint);
+		canvas.drawRect(4, radius * 2, this.getWidth() - 4,
+				this.getHeight() - radius * 2, paint);
 	}
 
 	public YesNoButton(Context context, AttributeSet attrs) {

@@ -108,7 +108,7 @@ public class SearchActivity extends Activity {
 					int position, long id) {
 				Map<String, Object> kind = ltKind.get(position);
 
-				if (kind.get("status").toString().trim().equals(getString(R.string.status))) {
+				if (kind.get("status").toString().trim().equals(getString(R.string.str_status))) {
 					// turn to 確認ページ
 					Intent intent = new Intent();
 					intent.setClass(SearchActivity.this, ConfirmActivity.class);
@@ -299,13 +299,13 @@ public class SearchActivity extends Activity {
 						.trim());
 				map.put("kind", mapKindName.get("filenameJ").toString().trim());
 				map.put("img", R.drawable.book);
-				map.put("status", " 記入済み");
+				map.put("status", getString(R.string.str_status_finish));
 			} else {
 				map.put("filename", mapKindName.get("filenameE").toString()
 						.trim());
 				map.put("kind", mapKindName.get("filenameJ").toString().trim());
 				map.put("img", R.drawable.write);
-				map.put("status", "未記入");
+				map.put("status", getString(R.string.str_status));
 			}
 			rlist.add(map);
 		}
@@ -317,7 +317,7 @@ public class SearchActivity extends Activity {
 			List<Map<String, Object>> list, String name) {
 		List<Map<String, Object>> ltSearch = new ArrayList<Map<String, Object>>();
 		Map<String, Object> map = new HashMap<String, Object>();
-		String temp = "受診者がいません";
+		String temp = getString(R.string.str_no_person);
 		String tempName;
 		int noPerson = 0;
 		int i;

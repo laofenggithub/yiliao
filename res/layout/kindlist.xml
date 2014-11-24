@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/kindLayout"
-    android:orientation="horizontal">"
+    android:orientation="horizontal">
 
     <TextView android:layout_width="20dp"
         android:layout_height="wrap_content"/>
@@ -11,9 +11,10 @@
     <TextView android:id="@+id/kind"
         android:layout_width="250dp"
         android:layout_height="35dp"
-        style="@style/styleKind"/>"
+        style="@style/styleKind"/>
 
     <ImageView android:id="@+id/img"
+        android:contentDescription="@string/useless"
         android:layout_width="35dp"
         android:layout_height="35dp"/>
 

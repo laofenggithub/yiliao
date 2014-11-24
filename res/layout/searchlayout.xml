@@ -19,15 +19,17 @@
 
         <EditText
             android:id="@+id/ed_find"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/bt_exit"
             android:maxLength="8"
             android:singleLine="true"
             android:hint="@string/waitText"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp" />
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="75dp" />
 
         <ImageButton
             android:id="@+id/IBT1"
@@ -36,7 +38,8 @@
             android:layout_alignParentTop="true"
             android:layout_alignRight="@+id/ed_find"
             android:layout_marginTop="3dp"
-            android:background="#00000000"
+            android:background="@color/kuangcolor"
+            android:contentDescription="@string/useless"
             android:src="@drawable/search" />
 
         <ImageButton
@@ -47,7 +50,8 @@
             android:layout_alignParentTop="true"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            android:background="#00000000"
+            android:background="@color/kuangcolor"
+            android:contentDescription="@string/useless"
             android:src="@drawable/exit"/>
 
         <TextView
@@ -55,9 +59,9 @@
             style="@style/styleButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/bt_exit"
             android:layout_alignParentTop="true"
-            android:layout_marginRight="50dp"
+            android:layout_marginRight="45dp"
             android:layout_marginTop="20dp"
             android:text="@string/exit" />
         
@@ -92,7 +96,6 @@
 	            android:layout_height="wrap_content"/>
         
        	<LinearLayout
-		        android:id="@+id/linearLayout1"
 		        android:layout_width="380dp"
 		        android:layout_height="20dp"
 		        android:background="@drawable/titlebk"
@@ -128,7 +131,6 @@
 	</LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
@@ -169,7 +171,6 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal" >

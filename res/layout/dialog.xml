@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-
-    <RelativeLayout 
-        android:layout_width="200dp"
-		android:layout_height="110dp">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="110dp">
 
 		<LinearLayout
 			android:id="@+id/outBorder"
+			android:orientation="horizontal"
 			android:layout_width="200dp"
 			android:layout_height="110dp"/>
 
@@ -17,7 +13,7 @@
 		    android:id="@+id/exitInfo"
 		    android:layout_width="200dp"
 		    android:layout_height="50dp"
-		    android:text="終了しますか"
+		    android:text="@string/str_end"
 		    style="@style/styleConfirm"
 		    android:gravity="center"/>
 
@@ -25,6 +21,7 @@
 		    android:id="@+id/yesButton"
 		    android:layout_width="80dp"
             android:layout_height="40dp"
+            android:orientation="horizontal"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="10dp"
@@ -34,6 +31,7 @@
 		    android:id="@+id/noButton"
 		    android:layout_width="80dp"
             android:layout_height="40dp"
+            android:orientation="horizontal"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:layout_marginRight="10dp"
@@ -47,7 +45,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="60dp"
-		    android:text="はい"
+		    android:text="@string/str_yes"
 		    style="@style/styleButton"
 		    android:gravity="center"/>
 		
@@ -59,9 +57,8 @@
             android:layout_alignParentTop="true"
             android:layout_marginRight="10dp"
             android:layout_marginTop="60dp"
-		    android:text="いいえ"
+		    android:text="@string/str_no"
 		    style="@style/styleButton"
 		    android:gravity="center"/>
 
-	</RelativeLayout>
-</LinearLayout>
+</RelativeLayout>

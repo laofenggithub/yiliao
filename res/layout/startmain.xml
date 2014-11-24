@@ -21,7 +21,7 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:layout_marginRight="10dp"
-            android:background="#00000000"
+            android:background="@color/kuangcolor"
             android:src="@drawable/exit" 
             android:contentDescription="@string/desc"/>
 
@@ -298,7 +298,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_toLeftOf="@+id/nextButton"
-                android:text="@string/next" />
+                android:text="@string/str_next" />
 
             <ImageButton
                 android:id="@+id/nextButton"
@@ -307,7 +307,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="10dp"
-                android:background="#00000000"
+                android:background="@color/kuangcolor"
                 android:contentDescription="@string/desc"
                 android:src="@drawable/next" />
         </RelativeLayout>

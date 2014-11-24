@@ -29,8 +29,8 @@ import android.widget.Toast;
 
 public class StartActivity extends Activity {
 	
-	private final static int I_WIDTH = 600;
-	private final static int I_HEIGHT = 250;
+	private final static int I_WIDTH = 1000;
+	private final static int I_HEIGHT = 400;
 	
 	private TextView hospitalInfo[] = new TextView[7];
 	private BorderTextView test[] = new BorderTextView[9];
